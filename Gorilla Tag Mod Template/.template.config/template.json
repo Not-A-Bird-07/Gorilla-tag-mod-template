@@ -1,0 +1,50 @@
+{
+  "author": "NOT A BIRD",
+  "name": "Gorilla Tag Mod Template",
+  "description": "A Gorilla Tag Mod Template.",
+  "identity": "GTAG.TEMPLATE",
+  "shortName": "Gtag Template",
+  "preferNameDirectory": "true",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Gorilla_Tag_Mod_Template",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netstandard2.1"
+        }
+      ],
+      "defaultValue": "netstandard2.1"
+    },
+    "GUID": {
+      "type": "parameter",
+      "description": "GUID for the BepInEx mod (Can not contain spaces)",
+      "defaultValue": "MOD.GUID",
+      "replaces": "MOD.GUID"
+    },
+    "NAME": {
+      "type": "parameter",
+      "description": "Name for the BepInEx mod",
+      "defaultValue": "MOD NAME",
+      "replaces": "MOD NAME"
+    },
+    "AUTHOR": {
+      "type": "parameter",
+      "description": "This is you, gets put at the front of the GUID (Can not contain spaces)",
+      "defaultValue": "AUTHOR.NAME",
+      "replaces": "AUTHOR"
+    },
+    "GAME PATH": {
+      "type": "parameter",
+      "description": "Put the path to your game, e.g., '/run/media/notabird/fast/SteamLibrary/steamapps/common/Gorilla Tag/' (Linux example)",
+      "defaultValue": "GorillaGamePath",
+      "replaces": "GorillaGamePath"
+    }
+  }
+}
